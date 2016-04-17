@@ -8,6 +8,6 @@ namespace TravelManagement.UI
 {
     class test
     {
-        string test = "Tan Vo Anh Hoang OK";
+        string test = "Tan Vo Anh Hoang OK TT";
     }
 }
