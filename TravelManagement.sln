@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelManagement", "TravelManagement\TravelManagement.csproj", "{3A2F421D-407A-42E0-BEE8-4F91B61D0D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelManagement.UI", "TravelManagement.UI\TravelManagement.UI.csproj", "{854EC1A7-1B82-4FF7-B375-C048A955FD26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelManagement.Model", "TravelManagement.Model\TravelManagement.Model.csproj", "{B597930F-0980-4066-9EB4-FFF4F1ABEA2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelManagement.DAL", "TravelManagement.DAL\TravelManagement.DAL.csproj", "{D73A1BF0-C57D-4276-B421-48D9F5C3FBDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelManagement.Controller", "TravelManagement.Controller\TravelManagement.Controller.csproj", "{27F049EE-687C-4A2A-B592-1890FD8E22C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A2F421D-407A-42E0-BEE8-4F91B61D0D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2F421D-407A-42E0-BEE8-4F91B61D0D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2F421D-407A-42E0-BEE8-4F91B61D0D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2F421D-407A-42E0-BEE8-4F91B61D0D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854EC1A7-1B82-4FF7-B375-C048A955FD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854EC1A7-1B82-4FF7-B375-C048A955FD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854EC1A7-1B82-4FF7-B375-C048A955FD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854EC1A7-1B82-4FF7-B375-C048A955FD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B597930F-0980-4066-9EB4-FFF4F1ABEA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B597930F-0980-4066-9EB4-FFF4F1ABEA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B597930F-0980-4066-9EB4-FFF4F1ABEA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B597930F-0980-4066-9EB4-FFF4F1ABEA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73A1BF0-C57D-4276-B421-48D9F5C3FBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73A1BF0-C57D-4276-B421-48D9F5C3FBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73A1BF0-C57D-4276-B421-48D9F5C3FBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73A1BF0-C57D-4276-B421-48D9F5C3FBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F049EE-687C-4A2A-B592-1890FD8E22C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F049EE-687C-4A2A-B592-1890FD8E22C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F049EE-687C-4A2A-B592-1890FD8E22C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F049EE-687C-4A2A-B592-1890FD8E22C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
