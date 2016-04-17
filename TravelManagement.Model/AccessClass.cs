@@ -8,5 +8,6 @@ namespace TravelManagement.Model
 {
     class AccessClass
     {
+        String abc = "";
     }
 }
