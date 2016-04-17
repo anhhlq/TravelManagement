@@ -8,5 +8,6 @@ namespace TravelManagement.UI
 {
     class test
     {
+        string test = "";
     }
 }
