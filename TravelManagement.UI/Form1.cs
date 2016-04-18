@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TravelManagement.BusinessLayer;
+using TravelManagement.Model;
 
 namespace TravelManagement.UI
 {
@@ -15,6 +17,10 @@ namespace TravelManagement.UI
         public Form1()
         {
             InitializeComponent();
+            IBusinessLayer businessLayer = new BuinessLayer();
+            User user = businessLayer.GetUserByName("HoangAnh");
+            textBox1.Text = user.Email.ToString();
+
         }
     }
 }
