@@ -16,7 +16,7 @@ namespace TravelManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TravelManagement.UI.Form1());
+            Application.Run(new TravelManagement.UI.Login());
         }
     }
 }
