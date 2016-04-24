@@ -82,15 +82,11 @@
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // cb_rememberme
-            // 
-            this.cb_rememberme.AutoSize = true;
-            this.cb_rememberme.Location = new System.Drawing.Point(302, 175);
-            this.cb_rememberme.Name = "cb_rememberme";
-            this.cb_rememberme.Size = new System.Drawing.Size(63, 17);
-            this.cb_rememberme.TabIndex = 5;
-            this.cb_rememberme.Text = "Ghi nhớ";
-            this.cb_rememberme.UseVisualStyleBackColor = true;
+            this.tb_PassWord.Location = new System.Drawing.Point(302, 143);
+            this.tb_PassWord.Name = "tb_PassWord";
+            this.tb_PassWord.PasswordChar = '.';
+            this.tb_PassWord.Size = new System.Drawing.Size(211, 20);
+            this.tb_PassWord.TabIndex = 3;
             // 
             // Login
             // 
