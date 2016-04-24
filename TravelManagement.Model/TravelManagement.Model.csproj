@@ -50,25 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Company.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Company.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Company.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Company.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Company.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Company.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tbl_Company.cs">
-      <DependentUpon>Company.tt</DependentUpon>
-    </Compile>
     <Compile Include="User.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,23 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="Company.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Company.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Company.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Company.edmx</DependentUpon>
-      <LastGenOutput>Company.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Company.edmx.diagram">
-      <DependentUpon>Company.edmx</DependentUpon>
-    </None>
-    <None Include="Company.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Company.edmx</DependentUpon>
-      <LastGenOutput>Company.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
     <EntityDeploy Include="User.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
