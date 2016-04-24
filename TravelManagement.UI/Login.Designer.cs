@@ -63,10 +63,11 @@
             // 
             // tb_PassWord
             // 
+            this.tb_PassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_PassWord.Location = new System.Drawing.Point(302, 143);
             this.tb_PassWord.Name = "tb_PassWord";
-            this.tb_PassWord.PasswordChar = '.';
-            this.tb_PassWord.Size = new System.Drawing.Size(211, 20);
+            this.tb_PassWord.PasswordChar = '*';
+            this.tb_PassWord.Size = new System.Drawing.Size(211, 24);
             this.tb_PassWord.TabIndex = 3;
             // 
             // Login
