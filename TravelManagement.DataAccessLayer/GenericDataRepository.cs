@@ -26,7 +26,8 @@ namespace TravelManagement.DataAccessLayer
 
                 item = dbQuery
                     .AsNoTracking() //Don't track any changes for the selected item
-                    .FirstOrDefault(where); //Apply where clause
+                    .Where(where)
+                    .FirstOrDefault(); //Apply where clause
             }
             return item;
         }

@@ -18,8 +18,6 @@ namespace TravelManagement.UI
         {
             InitializeComponent();
             IBusinessLayer businessLayer = new BuinessLayer();
-            User user = businessLayer.GetUserByName("HoangAnh");
-            textBox1.Text = user.Email.ToString();
 
         }
     }

@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.lb_UserName = new System.Windows.Forms.Label();
-            this.tb_UserName = new System.Windows.Forms.TextBox();
+            this.txt_username = new System.Windows.Forms.TextBox();
             this.lb_PassWord = new System.Windows.Forms.Label();
-            this.tb_PassWord = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.btn_login = new System.Windows.Forms.Button();
+            this.cb_rememberme = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lb_UserName
@@ -44,12 +46,13 @@
             this.lb_UserName.TabIndex = 0;
             this.lb_UserName.Text = "Tên đăng nhập";
             // 
-            // tb_UserName
+            // txt_username
             // 
-            this.tb_UserName.Location = new System.Drawing.Point(302, 108);
-            this.tb_UserName.Name = "tb_UserName";
-            this.tb_UserName.Size = new System.Drawing.Size(211, 20);
-            this.tb_UserName.TabIndex = 1;
+            this.txt_username.Location = new System.Drawing.Point(302, 108);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(211, 20);
+            this.txt_username.TabIndex = 1;
+            this.txt_username.Validating += new System.ComponentModel.CancelEventHandler(this.txt_username_Validating);
             // 
             // lb_PassWord
             // 
@@ -61,22 +64,44 @@
             this.lb_PassWord.TabIndex = 2;
             this.lb_PassWord.Text = "Mật khẩu";
             // 
-            // tb_PassWord
+            // txt_password
             // 
-            this.tb_PassWord.Location = new System.Drawing.Point(302, 143);
-            this.tb_PassWord.Name = "tb_PassWord";
-            this.tb_PassWord.PasswordChar = '.';
-            this.tb_PassWord.Size = new System.Drawing.Size(211, 20);
-            this.tb_PassWord.TabIndex = 3;
+            this.txt_password.Location = new System.Drawing.Point(302, 143);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '.';
+            this.txt_password.Size = new System.Drawing.Size(211, 20);
+            this.txt_password.TabIndex = 3;
+            // 
+            // btn_login
+            // 
+            this.btn_login.Location = new System.Drawing.Point(302, 198);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(75, 23);
+            this.btn_login.TabIndex = 4;
+            this.btn_login.Text = "Đăng nhập";
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // cb_rememberme
+            // 
+            this.cb_rememberme.AutoSize = true;
+            this.cb_rememberme.Location = new System.Drawing.Point(302, 175);
+            this.cb_rememberme.Name = "cb_rememberme";
+            this.cb_rememberme.Size = new System.Drawing.Size(63, 17);
+            this.cb_rememberme.TabIndex = 5;
+            this.cb_rememberme.Text = "Ghi nhớ";
+            this.cb_rememberme.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 394);
-            this.Controls.Add(this.tb_PassWord);
+            this.Controls.Add(this.cb_rememberme);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.txt_password);
             this.Controls.Add(this.lb_PassWord);
-            this.Controls.Add(this.tb_UserName);
+            this.Controls.Add(this.txt_username);
             this.Controls.Add(this.lb_UserName);
             this.Name = "Login";
             this.Text = "Login";
@@ -88,8 +113,10 @@
         #endregion
 
         private System.Windows.Forms.Label lb_UserName;
-        private System.Windows.Forms.TextBox tb_UserName;
+        private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.Label lb_PassWord;
-        private System.Windows.Forms.TextBox tb_PassWord;
+        private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.CheckBox cb_rememberme;
     }
 }

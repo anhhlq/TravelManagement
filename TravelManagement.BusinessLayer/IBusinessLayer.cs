@@ -8,6 +8,6 @@ namespace TravelManagement.BusinessLayer
 {
     public interface IBusinessLayer
     {
-        User GetUserByName(string name);
+        Boolean CheckLogin(string userName, string password);
     }
 }

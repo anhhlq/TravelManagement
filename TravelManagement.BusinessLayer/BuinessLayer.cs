@@ -19,10 +19,17 @@ namespace TravelManagement.BusinessLayer
         {
             _userRepository = userRepository;
         }
-        public User GetUserByName(string userName)
+        public User Login(string userName, string password)
         {
-            return _userRepository.GetSingle(
-                d => d.UserName.Equals(userName));
+            return _userRepository.GetSingle(d => d.UserName.Equals(userName) && d.Password.Equals(password));
         }
+
+        public Boolean CheckLogin(string userName, string password)
+        {
+            if (Login(userName, password) != null)
+                return true;
+            return false;
+        }
+
     }
 }
